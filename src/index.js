@@ -1,17 +1,10 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+// 1- tiene que estar la variable react en scope
+import React from "react"
+// 2- tiene que estar la variable reactDOM en scope
+import ReactDOM from "react-dom"
+// 3- tengo que tener un elemento
+const Elemento = () => <p>Hola Mundo</p>
+// 4- tengo que renderizar el elemento
+ReactDOM.render(<Elemento/> , document.getElementById('root'))
 
-ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
-  document.getElementById('root')
-);
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
