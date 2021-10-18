@@ -1,0 +1,6 @@
+COMPONENTES:
+
+1. El nombre del componentes siempre debe arrancar en mayuscula
+2. No se puede repetir el nombre del componente.
+3. Los componentes funciones
+4. Todos los componentes tienen que retornar algo (return como regla)
