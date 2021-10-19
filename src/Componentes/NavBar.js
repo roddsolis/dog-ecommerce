@@ -1,6 +1,6 @@
-import Logo from '../src/img/doglogo.svg'
+import Logo from '../img/doglogo.svg'
 
-const Menu = () => {
+const NavBar = () => {
     return(
             <>
             <img src={Logo} width="120px" alt="logo" />
@@ -17,4 +17,4 @@ const Menu = () => {
     )
 }
 
-export default Menu
+export default NavBar

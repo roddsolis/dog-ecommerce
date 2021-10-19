@@ -2,10 +2,10 @@ import React from "react"
 
 import ReactDOM from "react-dom"
 
-import Menu from "./Menu"
+import NavBar from "./Componentes/NavBar"
 
 import "./style.css"
 
 
-ReactDOM.render(<Menu/>, document.getElementById("menu"))
+ReactDOM.render(<NavBar/>, document.getElementById("menu"))
 
