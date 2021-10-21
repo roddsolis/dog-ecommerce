@@ -1,5 +1,6 @@
 import Logo from '../img/doglogo.svg'
 
+
 const NavBar = () => {
     return(
             <>
@@ -12,9 +13,9 @@ const NavBar = () => {
             </ul>
             <button>Soy un botón</button>
             </>
-            
        
     )
 }
+
 
 export default NavBar

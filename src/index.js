@@ -2,10 +2,7 @@ import React from "react"
 
 import ReactDOM from "react-dom"
 
-import NavBar from "./Componentes/NavBar"
-
-import "./style.css"
+import App from "./App.js"
 
 
-ReactDOM.render(<NavBar/>, document.getElementById("menu"))
-
+ReactDOM.render(<App/>, document.getElementById("root"))
