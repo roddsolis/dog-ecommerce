@@ -1,13 +1,10 @@
+import './Componentes/styles/style.css'
+import NavBar from './Componentes/NavBar'
 
-import NavBar from "./Componentes/NavBar"
-import "./style.css"
 
-function App () {
-    return <>
-    <NavBar />
-    </>
+const App = () => {
+    return( <NavBar/> )
 }
-
 
 
 export default App

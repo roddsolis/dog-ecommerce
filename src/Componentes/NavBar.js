@@ -1,19 +1,21 @@
 import Logo from '../img/doglogo.svg'
+import Button from './Button'
+import './styles/navbar.css'
 
 
 const NavBar = () => {
     return(
-            <>
-            <img src={Logo} width="120px" alt="logo" />
-            <ul>
-                <li><a href="http://">Item de menu 1</a></li>
-                <li><a href="http://">Item de menu 2</a></li>
-                <li><a href="http://">Item de menu 3</a></li>
-                <li><a href="http://">Item de menu 4</a></li>
-            </ul>
-            <button>Soy un botón</button>
-            </>
-       
+        <header>
+            <img src={Logo} width="150px" alt="logo" />
+            <nav>
+                <a href="http://">Collares</a>
+                <a href="http://">Correas</a>
+                <a href="http://">Juguetes</a>
+                <a href="http://">Arneses</a>
+            </nav>
+            <Button/>
+        </header>
+      
     )
 }
 
