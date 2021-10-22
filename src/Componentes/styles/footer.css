@@ -1,0 +1,12 @@
+footer{
+
+    height: 96px;
+    background-color: #34312e;
+    color: #807672;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 14px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}

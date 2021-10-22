@@ -1,0 +1,37 @@
+.widget-container{
+    height: auto;
+    background-color: #f7f1ef;
+    color: #34312e;
+    border-radius: 10px;
+    border: 1px solid #ddd5cd;
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 500;
+    font-size: 12px;
+    transition: 0.2s;
+    shape-rendering:geometricPrecision;
+    text-rendering: optimizeLegibility;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-transform: uppercase;
+    letter-spacing: -0.01em;
+    padding-left: 16px;
+}
+
+img{
+    margin-right:8px;
+}
+
+.cart-number{
+    background-color: #34312e;
+    color: #fff;
+    width:max-content;
+    height: 40px;
+    padding:16px;
+    margin: 0px 0px 0px 16px;
+    border-radius: 0px 8px 8px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+

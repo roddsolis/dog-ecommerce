@@ -1,6 +1,6 @@
 import Logo from '../img/doglogo.svg'
-import Button from './Button'
 import './styles/navbar.css'
+import CartWidget from './CartWidget'
 
 
 const NavBar = () => {
@@ -13,7 +13,7 @@ const NavBar = () => {
                 <a href="http://">Juguetes</a>
                 <a href="http://">Arneses</a>
             </nav>
-            <Button/>
+            <CartWidget/>
         </header>
       
     )

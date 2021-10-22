@@ -8,7 +8,9 @@ header{
     padding: 8px 24px;
     border-bottom: 1px solid #f3e9e6;
     font-family: 'DM Sans', sans-serif;
-    /* box-shadow: 0px 30px 60px -20px #e6e1df; */
+    font-size: 14px;
+    letter-spacing: 0.02em;
+   
 }
 
 nav{
@@ -18,14 +20,18 @@ nav{
     justify-content: center;
     align-items: center;    
 }
+
 a{
     text-decoration:none;
     color:  #b3aead;
     padding: 0px 16px;
     transition: 0.2s ease-in-out;
+    text-transform: uppercase;
 }
+
 a:hover{
     text-decoration:none;
     color:#34312e;
     transition: 0.2s ease-in-out;
+    text-transform: uppercase;
 }
