@@ -5,6 +5,4 @@ function Button ()  {
         <button>comprar</button>
     )
 }
-
-
 export default Button
