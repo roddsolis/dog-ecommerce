@@ -1,9 +1,14 @@
 import './styles/item-list-container.css'
 
-function ItemListContainer () {
+function ItemListContainer (greeting) {
+
+    console.log(greeting)
     return(
         <>
-        <p>este es el item list container</p>
+        <div className="container-greeting">
+        <p>{greeting.saludo} {greeting.nombre}</p>
+        </div>
+        
         </>
     )
 }
