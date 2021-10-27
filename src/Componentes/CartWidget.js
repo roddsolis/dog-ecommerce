@@ -1,5 +1,5 @@
 import './styles/cartwidget.css'
-import Icon from'../img/Cart-icon.svg'
+import Icon from'../img/Cart-icon-normal.svg'
 
 
 function CartWidget () {

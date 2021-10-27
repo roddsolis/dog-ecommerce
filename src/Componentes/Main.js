@@ -1,10 +1,12 @@
 import './styles/main.css'
+import ItemCount from './ItemCount'
 
 
 function Main () {
     return(
         <main>
-            <p>Este es el contenido principal</p>
+            <ItemCount/>
+            {/* <p>Este es el contenido principal</p> */}
         </main>
     )
 }

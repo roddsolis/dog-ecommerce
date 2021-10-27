@@ -8,9 +8,7 @@ header{
     padding: 8px 24px;
     border-bottom: 1px solid #e9dcd9;
     font-family: 'DM Sans', sans-serif;
-    font-size: 14px;
-    letter-spacing: 0.02em;
-   
+    font-size: 16px;
 }
 
 nav{
@@ -26,12 +24,12 @@ a{
     color:  #b3aead;
     padding: 0px 16px;
     transition: 0.2s ease-in-out;
-    text-transform: uppercase;
+    /* text-transform: uppercase; */
 }
 
 a:hover{
     text-decoration:none;
     color:#34312e;
     transition: 0.2s ease-in-out;
-    text-transform: uppercase;
+    /* text-transform: uppercase; */
 }
