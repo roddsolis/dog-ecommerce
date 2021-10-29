@@ -2,7 +2,9 @@ import './styles/main.css'
 import ItemCount from './ItemCount'
 
 
+
 function Main () {
+
     return(
         <main>
             <ItemCount/>
