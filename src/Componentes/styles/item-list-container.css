@@ -1,13 +1,14 @@
-.container-greeting{
-    background-color:#d2f878;
-    height: 4vh;
-    color: #86b811;
-    font-family: 'DM Sans', sans-serif;
-    font-weight: 200;
-    font-size: 14px;
-    /* text-transform: uppercase; */
+.container-list{
+    background-color: #fff;
+    height: 81vh;
     display: flex;
     align-items: center;
-    padding: 16px;
+    justify-content: space-around;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column-gap: 24px;
+    column-gap: 24px;
+    justify-items: center;
 
 }
+

@@ -1,29 +1,31 @@
+.button--primary {
 
-.button--primary{
-
-    height: 40px;
+    height: 48px;
     padding: 16px;
+    width:50%;
     background-color: #34312e;
     color: #d2f878;
     border-radius: 8px;
-    border: 1px solid  #34312e;
-    font-family: 'DM Sans', sans-serif;
-    font-size: 12px;
-    transition: 0.2s;
-    font-weight: 200;
-    shape-rendering:geometricPrecision;
+    border: none;
+    shape-rendering: geometricPrecision;
     text-rendering: optimizeLegibility;
     display: flex;
     justify-content: center;
     align-items: center;
-    text-transform: uppercase;
-    letter-spacing: 0.05em;
+    font-family: 'Manrope', sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 19px;
+    letter-spacing: -0.01em;
+    text-align: left;
+
+
 }
 
-.button--primary:hover{
+.button--primary:hover {
     background-color: #d2f878;
     color: #34312e;
-    border: 1px solid #d2f878;
+    border: none;
 
 }
-

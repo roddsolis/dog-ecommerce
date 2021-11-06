@@ -6,7 +6,7 @@ function CartWidget () {
     return(
 
         <div className="widget-container" >
-            <p>Carro de compras</p>
+            <p>Carro de Compras</p>
             <div className="cart-number"><img src={Icon} alt="cart-logo" width="16px"/>0</div>
         </div>
         
