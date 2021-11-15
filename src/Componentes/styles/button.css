@@ -1,10 +1,11 @@
-.button--primary {
+/* .button--primary {
 
     height: 48px;
     padding: 16px;
-    width:50%;
-    background-color: #34312e;
-    color: #d2f878;
+    width:100%;
+    background-color: hsla(20, 6%, 95%, 1);
+    color: hsl(30, 6%, 19%);
+    
     border-radius: 8px;
     border: none;
     shape-rendering: geometricPrecision;
@@ -17,15 +18,78 @@
     font-style: normal;
     font-weight: 600;
     line-height: 19px;
-    letter-spacing: -0.01em;
+    letter-spacing: 0em;
     text-align: left;
+    transition: 0.1s ease-in-out;
 
 
 }
 
 .button--primary:hover {
-    background-color: #d2f878;
-    color: #34312e;
-    border: none;
+    background-color: hsl(30, 6%, 19%);
+    color: white;
+    
+    
+} */
 
+.button-primary{
+    height: 48px;
+    padding: 16px;
+    width:100%;
+    background-color: hsl(30, 6%, 19%);
+    color: white;
+    border-radius: 8px;
+    border: none;
+    shape-rendering: geometricPrecision;
+    text-rendering: optimizeLegibility;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Manrope', sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 19px;
+    letter-spacing: 0em;
+    text-align: left;
+    transition: 0.3s ease-in-out;
+    color: white;
+    
+}
+.button-primary:hover{
+    background-color: hsl(207, 78%, 64%);
+    color: white;
+}
+
+
+
+.button-secondary{
+    height: 48px;
+    padding: 16px;
+    width:100%;
+    background-color: white;
+    color: hsl(30, 6%, 19%);
+    border-radius: 8px;
+    border: none;
+    shape-rendering: geometricPrecision;
+    text-rendering: optimizeLegibility;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Manrope', sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 19px;
+    letter-spacing: 0em;
+    text-align: left;
+    transition: 0.3s ease-in-out;
+    border: 1px solid hsla(20, 6%, 90%, 1); 
+
+}
+
+.button-secondary:hover{
+    background-color: hsla(20, 6%, 96%, 1);
+    color: hsl(30, 6%, 19%);
+    
 }

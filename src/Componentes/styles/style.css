@@ -11,3 +11,7 @@ html , body{
     background-color: #f4f6f8;
     height: 100vh;
 }
+
+.productImg{
+    width: 70%;
+}

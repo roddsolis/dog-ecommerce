@@ -1,13 +1,20 @@
+
 import './styles/button.css'
 // import Icon from'../img/Cart-icon-normal.svg'
 
-function Button (nombre)  {
 
-    nombre = "Agregar al Carro"
+
+
+export default function Button (props)  {
+
+   
 
     return(
-        <button className="button--primary">{nombre}</button>
+        <button className={props.buttonType}>{props.btntext}</button>
+        
     )
-    // <img src={Icon} alt="cart-logo" width="16px"/>
+    
+    
 }
-export default Button
+
+

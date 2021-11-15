@@ -4,16 +4,16 @@
     align-items: center;
     justify-content: space-between;
     margin: 24px 0px;
-
+    border: 1px solid hsl(30, 6%, 90%);
+    border-radius: 8px;
 }
 
 .boton-sumar, .boton-restar{
     background: linear-gradient(0deg, hsl(30, 6%, 97%) , #fff);
     color: hsla(30, 6%, 19%, 1);
     height: 40px;
-    width: 56px;
-    border-radius: 8px;
-    border: 1px solid hsl(30, 6%, 90%);
+    width: 40px;
+    border: none;
     font-family: 'Manrope', sans-serif;
     font-weight: 700;
     font-size: 18px;
@@ -27,19 +27,28 @@
 
 }
 
+.boton-sumar {
+    border-radius: 0px 8px 8px 0px;
+}
+.boton-restar{
+    border-radius: 8px 0px 0px 8px;
+}
+
+
+
 .contador{
     font-family: 'Manrope', sans-serif;
     font-weight: 700;
     font-size: 14px;
     color:hsla(30, 6%, 19%, 1);
     background: linear-gradient(0deg, hsl(30, 6%, 97%) , #fff);
-    border: 1px solid hsl(30, 6%, 90%);
-    border-radius: 8px;
+    border-left: 1px solid hsl(30, 6%, 90%);
+    border-right: 1px solid hsl(30, 6%, 90%);
+    border-radius: 0px;
     width: 40px;
     height: 40px;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 0px 8px;
     
 }

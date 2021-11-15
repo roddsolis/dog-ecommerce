@@ -1,9 +1,9 @@
 .widget-container{
     height: auto;
-    background-color: #eee7e5;
-    color: #34312e;
+    background-color: hsl(200, 60%, 98%);
+    color: hsl(207, 93%, 46%);
     border-radius: 10px;
-    border: 1px solid #ddd5cd;
+    border: 1px solid hsl(207, 100%, 86%);
     font-family: 'Manrope', sans-serif;
     font-weight: 500;
     font-size: 12px;
@@ -14,7 +14,7 @@
     justify-content: space-between;
     align-items: center;
     text-transform: uppercase;
-    letter-spacing: -0.01em;
+    letter-spacing: 0em;
     padding-left: 16px;
 }
 
@@ -23,8 +23,8 @@ img{
 }
 
 .cart-number{
-    background-color: #34312e;
-    color: #dbfa92;
+    background-color: hsl(207, 93%, 46%);
+    color: white;
     width:max-content;
     height: 40px;
     padding:16px;

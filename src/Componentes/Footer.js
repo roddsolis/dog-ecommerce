@@ -1,7 +1,7 @@
 import './styles/footer.css'
 
 
-function Footer (){
+export default function Footer (){
     return(
         <footer>
             <p>© todos los derechos reservados</p>
@@ -11,4 +11,3 @@ function Footer (){
 
 }
 
-export default Footer
