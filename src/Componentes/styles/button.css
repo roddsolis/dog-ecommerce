@@ -37,7 +37,7 @@
     padding: 16px;
     width:100%;
     background-color: hsl(30, 6%, 19%);
-    color: white;
+    color: hsla(78, 90%, 61%, 1);
     border-radius: 8px;
     border: none;
     shape-rendering: geometricPrecision;
@@ -51,19 +51,18 @@
     font-weight: 600;
     line-height: 19px;
     letter-spacing: 0em;
-    text-align: left;
+    text-align: center;
     transition: 0.3s ease-in-out;
-    color: white;
     
 }
 .button-primary:hover{
-    background-color: hsl(207, 78%, 64%);
-    color: white;
+    background-color: hsla(78, 90%, 61%, 1);
+    color: hsl(30, 6%, 19%);
 }
 
 
 
-.button-secondary{
+/* .button-secondary{
     height: 48px;
     padding: 16px;
     width:100%;
@@ -86,10 +85,64 @@
     transition: 0.3s ease-in-out;
     border: 1px solid hsla(20, 6%, 90%, 1); 
 
-}
+} */
 
-.button-secondary:hover{
+/* .button-secondary:hover{
     background-color: hsla(20, 6%, 96%, 1);
     color: hsl(30, 6%, 19%);
     
+} */
+
+
+/* .link_btn_secondary{
+    height: 48px;
+    padding: 16px;
+    width:100%;
+    background-color: white;
+    color: hsl(30, 6%, 19%);
+    border-radius: 8px;
+    border: none;
+    shape-rendering: geometricPrecision;
+    text-rendering: optimizeLegibility;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Manrope', sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 19px;
+    letter-spacing: 0em;
+    text-align: left;
+    transition: 0.3s ease-in-out;
+    border: 1px solid hsla(20, 6%, 90%, 1);
+} */
+
+.btnLinkSecondary{
+    height: 48px;
+    padding: 16px;
+    width:100%;
+    background-color: white;
+    color: hsl(30, 6%, 19%);
+    border-radius: 8px;
+    border: none;
+    shape-rendering: geometricPrecision;
+    text-rendering: optimizeLegibility;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Manrope', sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 19px;
+    letter-spacing: 0em;
+    text-align: center;
+    transition: 0.3s ease-in-out;
+    border: 1px solid hsla(20, 6%, 90%, 1);
+    text-decoration: none;
+}
+.btnLinkSecondary:hover{
+    background-color: hsla(20, 6%, 96%, 1);
+    color: hsl(30, 6%, 19%);
 }

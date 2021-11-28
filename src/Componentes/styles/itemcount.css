@@ -45,7 +45,7 @@
     border-left: 1px solid hsl(30, 6%, 90%);
     border-right: 1px solid hsl(30, 6%, 90%);
     border-radius: 0px;
-    width: 40px;
+    width: 100%;
     height: 40px;
     display: flex;
     justify-content: center;

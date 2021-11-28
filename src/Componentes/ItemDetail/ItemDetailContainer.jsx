@@ -1,10 +1,7 @@
+import React, { useEffect } from 'react'
+import ItemDetail from "./ItemDetail"
+import './itemDetail.css'
 
-import React from 'react'
-import { useParams } from 'react-router-dom'
-import { useEffect } from 'react'
-import ItemList from './ItemList.js'
-import './styles/item-list-container.css'
-import Loading from './Loading/Loading.jsx'
 
 
 const productList = [
@@ -411,53 +408,54 @@ const productList = [
 ]
 
 
-export default function ItemListContainer() {
 
+const ItemDetailcontainer = () => {
+
+    const [detail, setDetail] = React.useState({})
 
     
-    const {categoria} = useParams() 
- 
+
+    React.useEffect(() => {
+
+
+        const productDetail = new Promise((resolve, reject) => {
+
+
+            setTimeout(() => {
+
+                resolve(productList)
+               
+
+            }, 2000);
+
+        })
+
+
+
+        productDetail.then((resolve) => {
+            setDetail(resolve)
+            console.log(resolve)
+            
+        })
+        productDetail.catch((reject) => {
+            "Ocurrio un problema"
+        })
+
+
+
+
+
+    }, [])
+
     
-     const [productos, setProductos] = React.useState([])
- 
- 
-     React.useEffect(()=>{
- 
- 
-         const productItems = new Promise ((resolve,reject)=>{
- 
-         
-             setTimeout(() => {
-                 
-             resolve(productList)
-             
-             
-             },2000);
-             
-         })
-         
+
+    return ( 
         
- 
-         productItems.then((resolve)=>{setProductos(resolve)})
-         productItems.catch((reject)=>{"Ocurrio un problema"})
- 
         
- 
+        <ItemDetail detail={detail}/>
        
- 
-     },[categoria])
+        
+    )
+}
 
-     console.log(categoria)
- 
- 
-     return (
-         <>
-         {productos.length > 0 ? <ItemList productos={productos}/> : <Loading/> }
-         </>
-     )
- 
-     
- 
- }
-
-// ItemListCointainer: Acá va el useEffect con la promise dentro para hacer el pedido de los productos, que los guardas en un useState (un estado) y se los pasas por props al ItemList.
+export default ItemDetailcontainer

@@ -1,13 +1,14 @@
 .container-list{
     /* background-color: white; */
-    background-color: hsla(20, 6%, 98%, 1);
+    background-color: hsla(30, 6%, 97%, 1);
     height: auto;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr ;
     grid-template-rows: 1fr 1fr ;
     column-gap: 24px;
     row-gap: 24px;
-    padding:148px 60px 60px 60px;
+    padding: 56px;
+    
 
 }
 

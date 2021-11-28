@@ -1,0 +1,149 @@
+
+.container__details{
+    width: 100%;
+    height: auto;
+    background-color: hsl(0, 0%, 97%);
+    padding: 32px;
+}
+
+.product__details{
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 48px;
+    grid-template-rows: repeat(2, 1fr);
+    row-gap: 48px;
+    padding: 96px;
+    border: 1px solid hsl(0, 0%, 95%);
+    border-radius: 16px;
+}
+
+.imgDetail__container{
+
+    background-color: white;
+    position: relative;
+    border: 1px solid hsl(0, 0%, 95%);
+    
+
+}
+
+.imgDetail{
+
+    
+    width: 70%;
+      
+}
+
+.main__info{
+
+    padding: 48px;
+    display: flex;
+    align-items:flex-start;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.cta__container{
+    
+    width: 100%;
+    height: fit-content;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 24px;
+    display: flex;
+    align-items: center;
+
+}
+
+
+/* ACA COMIENZAN LOS ESTILOS DEL CONTENEDOR DE TAGS */
+
+
+
+.productDetail-tag {
+    border: 1px solid hsla(20, 6%, 95%, 1);
+    color: hsla(30, 6%, 19%, 1);
+    width: fit-content;
+    padding: 8px;
+    font-family: 'Manrope', sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    text-rendering: optimizeLegibility;
+    border-radius: 8px;
+    letter-spacing: 0.05em;
+    position: absolute;
+    top: 16px;
+    left: 16px;
+}
+
+.productDetail-stock {
+ 
+    border: 1px solid hsla(20, 6%, 95%, 1);
+    color: hsla(30, 6%, 19%, 1);
+    width: fit-content;
+    padding: 8px;
+    font-family: 'Manrope', sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    text-rendering: optimizeLegibility;
+    border-radius: 8px;
+    letter-spacing: 0.05em;
+    position: absolute;
+    top: 16px;
+    right: 16px;
+}
+
+.productDetail-sku {
+    font-family: 'Manrope', sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+    letter-spacing: 0.05em;
+    text-rendering: optimizeLegibility;
+    width: fit-content;
+    color: hsl(30, 6%, 19%);
+    margin: 16px 0px 0px 0px;
+}
+
+/* ACA TERMINAN LOS ESTILOS DEL CONTENEDOR DE TAGS */
+
+.aditional__info{
+    
+    grid-column: 1 / 3 ;
+    grid-row: 2;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+
+}
+
+/* ESTOS SON LOS ESTILOS DE LOS TEXTOS */
+
+h6 {
+    color: #34312E;
+    font-family: 'Manrope', sans-serif;
+    font-size: 24px;
+    font-weight: 600;
+    text-rendering: optimizeLegibility;
+    margin-bottom: 16px;
+}
+
+hr {
+    border: 1px solid #f1f1f1;
+    margin-top: 48px;
+    margin-bottom: 48px;
+
+}
+
+p {
+
+    color: hsl(30, 6%, 19%);
+    font-family: 'Manrope', sans-serif;
+    font-size: 14px;
+    font-weight: 200;
+    text-rendering: optimizeLegibility;
+    letter-spacing: 0.05em;
+    line-height: 1.6em;
+
+}

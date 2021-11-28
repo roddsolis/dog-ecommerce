@@ -20,14 +20,15 @@ function ItemCount() {
 
 
     return (
-        <div className="item-product">
-            
+        
+            <>
             <div className="container--contador">
             <button onClick={restarContador} className="boton-restar">-</button>
             <div className="contador">{contador}</div>
             <button onClick={sumarContador} className="boton-sumar">+</button>
             </div>
-        </div>
+            </>
+        
     ) 
 }
 

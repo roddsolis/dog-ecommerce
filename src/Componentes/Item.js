@@ -1,13 +1,16 @@
 import Button from './Button'
-import './styles/items.css'
 import ItemCount from './ItemCount'
+import './styles/items.css'
 import './styles/button.css'
+//import ItemDetailContainer from './ItemDetail/ItemDetailContainer'
+import { Link } from 'react-router-dom'
 
 
 
-const Item = ({ producto} ) => {
 
+const Item = ( { producto } ) => {
 
+    
     return (
 
         
@@ -18,23 +21,22 @@ const Item = ({ producto} ) => {
                  <div className="product-tag">{producto.tag}</div>
                  <div className="product-stock">Stock:{producto.stock}</div>
              </div>
-             <div className="product-sku">SKU:{producto.sku}</div>
+
              <div className="product-description">
-                 <h3>{producto.nombre}</h3>
-                 <p>{producto.descripcion}</p>
+                    <div className="product-sku">SKU:{producto.sku}</div>
+                    <h3>{producto.nombre}</h3>
+                    {/* <p>{producto.descripcion}</p> */}
              </div>
              <div className="product-cta">
-                 <div className="product-price">
-                ${producto.price}
-                </div>
-                <ItemCount/>
-                
+                    <div className="product-price"><small>$</small>{producto.precio}</div>
+                    <ItemCount/>
              </div>
-                <div className="product-count">
-                <Button btntext="Ver detalles" buttonType="button-secondary"/>
+
+            <div className="product-count">
+                <Link to={`/detalles/${producto.id}`} className="btnLinkSecondary">Ver detalles</Link>
                 <Button btntext="Agregar al carro" buttonType="button-primary"/>
-                 </div>
-             </div>
+            </div>
+            </div>
          </>
     )
 }

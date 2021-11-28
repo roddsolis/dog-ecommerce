@@ -1,11 +1,10 @@
 
 import './styles/button.css'
-// import Icon from'../img/Cart-icon-normal.svg'
 
 
 
 
-export default function Button (props)  {
+ function Button (props)  {
 
    
 
@@ -16,5 +15,7 @@ export default function Button (props)  {
     
     
 }
+
+export default Button
 
 

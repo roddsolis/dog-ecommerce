@@ -4,7 +4,7 @@
 .product-container{
     background-color:#fff;
     width: 100%;
-    height: 550px;
+    height: auto;
     padding: 24px;
     border-radius: 16px; 
     border: 1px solid hsla(20, 6%, 96%, 1); 
@@ -47,6 +47,8 @@
     position: absolute;
     left: 16px;
     top: 16px;
+    shape-rendering: geometricPrecision;
+    text-rendering: optimizeLegibility;
   
 
 }
@@ -66,6 +68,8 @@
     position: absolute;
     right: 16px;
     top: 16px;
+    shape-rendering: geometricPrecision;
+    text-rendering: optimizeLegibility;
     
   
  
@@ -98,7 +102,6 @@ h3{
     padding-top: 16px;
     padding-bottom: 16px;
     display: flex;
-    align-items: center;
     flex-direction: column;
     font-family: 'Manrope', sans-serif;
     color: hsla(20, 6%, 50%, 1);
@@ -122,19 +125,19 @@ h3{
 }
 
 .product-price{
-    background-color:hsl(200, 60%, 98%);
+    
     width: 50%;
     height: 40px;
     font-family: 'Manrope', sans-serif;
-    color: hsl(207, 93%, 46%);
-    font-size: 16px;
+    color: hsl(30, 6%, 19%);
+    font-size: 18px;
     font-weight: 700;
     text-rendering:optimizeLegibility;
     letter-spacing: -0.5px;
     display: flex;
     justify-content: center;
     align-items: center;
-    border: 1px solid hsl(208, 100%, 93%);
+    border: 1px solid hsl(0, 0%, 96%);
     border-radius: 8px;
 }
 
