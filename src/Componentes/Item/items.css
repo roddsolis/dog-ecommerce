@@ -1,0 +1,127 @@
+.product-container {
+    background-color: #fff;
+    width: 100%;
+    height: auto;
+    padding: 24px;
+    border-radius: 16px;
+    border: 1px solid hsla(20, 6%, 96%, 1);
+    transition: 0.3s ease-in-out;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+
+}
+
+small{
+    font-family: 'Manrope', sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    text-rendering:geometricPrecision;
+}
+
+.product-container:hover {
+    box-shadow: 0px 30px 30px -5px hsla(30, 0%, 90%, 1);
+}
+
+
+.product-image {
+    color: hsla(30, 6%, 19%, 1);
+    width: auto;
+    height: 180px;
+    padding: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    border: 1px solid hsla(20, 6%, 95%, 1);
+    position: relative;
+}
+
+.chipContainer {
+    /* background-color: aqua; */
+    height: fit-content;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+
+.product-sku, .product-stock, .product-tag {
+    border: 1px solid hsla(0, 0%, 95%, 1);
+    background-color: hsla(0, 0%, 100%, 0.3);
+    color: hsla(30, 6%, 19%, 1);
+    width: fit-content ;
+    height: fit-content;
+    padding: 4px 8px;
+    font-family: 'Manrope', sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+    text-rendering:geometricPrecision;
+    border-radius: 6px;
+    letter-spacing: 0.05em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    backdrop-filter: blur(50px);
+}
+.product-sku{
+    margin-right: 8px;
+}
+
+.product-tag{
+    position: absolute;
+    top: 8px;
+    right: 8px;
+}
+
+h3 {
+    font-family: 'Manrope', sans-serif;
+    color: hsla(30, 6%, 19%, 1);
+    font-size: 16px;
+    font-weight: 700;
+    text-rendering:geometricPrecision;
+    letter-spacing: 0.01em;
+}
+
+.product-description {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    row-gap: 16px;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Manrope', sans-serif;
+    color: hsla(20, 6%, 50%, 1);
+    font-size: 12px;
+    font-weight: 400;
+    text-rendering:geometricPrecision;
+    letter-spacing: 0.07em;
+    margin-top: 8px;
+}
+
+.product-price {
+
+    width: 100%;
+    height: auto;
+    font-family: 'Manrope', sans-serif;
+    color: hsl(30, 6%, 19%);
+    font-size: 28px;
+    font-weight: 400;
+    text-rendering:geometricPrecision;
+    letter-spacing: -0.5px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    /* border: 1px solid hsl(0, 0%, 96%); */
+    border-radius: 8px;
+}
+
+.product-count {
+    height: 40px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}

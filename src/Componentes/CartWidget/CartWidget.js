@@ -1,5 +1,5 @@
 import '../CartWidget/cartwidget.css'
-import Icon from'/Users/rodrigosolis/Desktop/rodrigo/Curso-ReactJs/proyecto-ecommerce/dog-ecommerce/src/img/Cart-icon-normal.svg'
+import Icon from'../../img/Cart-icon-normal.svg'
 
 
 

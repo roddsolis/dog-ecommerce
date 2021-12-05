@@ -1,13 +1,12 @@
 //import Item from "../Item"
 import { useParams } from "react-router"
-import Button from "../Button"
-import ItemCount from "../ItemCount"
-import "/Users/rodrigosolis/Desktop/rodrigo/Curso-ReactJs/proyecto-ecommerce/dog-ecommerce/src/Componentes/ItemDetail/itemDetail.css"
+// import Button from "../Button"
+import ItemCount from "../Counter/ItemCount"
+import './itemDetail.css'
 
 
 
-function ItemDetail({detail}) {
-
+function ItemDetail(  ) {
 
 
 
@@ -22,26 +21,24 @@ return (
 
         
             
-            <div key={id} className="product__details">
+            <div className="product__details">
 
-            <div className="imgDetail__container">
-            <div className="productDetail-tag">nombre del tag</div>
-            <div className="productDetail-stock">numero de stock</div>
-            <img src="/" alt="img-detail" className="imgDetail" />
+            <div className="imgDetail__container" >
+            <div className="productDetail-tag" >categoria</div>
+            <div className="productDetail-stock">Stock </div>
+            <img src="/" alt="img-detail" className="imgDetail"/>
             </div>
             
             <div className="main__info">
 
-            <h6>Este es el nombre del producto y puede tener 2 líneas máximo.</h6>
+            <h6>nombre</h6>
             <p>
-                in text last influenced may secretly outcomes could options escape, in times and for
-                fact, two didn't the this of to he mister he chosen thing rung mad knows, that of home, employed
-                hero's broad. Deeply both continued is of instance. Should years, shreds was the can best little so.
+                descripcion
             </p>
 
-            <div className="productDetail-sku">SKU:123456789</div>
+            <div className="productDetail-sku">SKU:</div>
             <div className="cta__container">
-            <ItemCount /><Button  btntext="Agregar al carro" buttonType="button-primary"/> 
+            <ItemCount/>
             </div>
             
             </div>
