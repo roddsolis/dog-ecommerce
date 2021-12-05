@@ -1,31 +1,36 @@
 import React,{useState,useEffect} from "react"
 import { useParams} from "react-router"
+import Button from "../Button"
 import ItemCount from "../Counter/ItemCount"
 import './itemDetail.css'
 
 
 
 function ItemDetail({detail}) {
-
     const [product, setProduct]=useState([])
     const {id} = useParams();
 
     useEffect(() => {
-        const producto= detail.find(el=> el.id === id)
+        let producto= detail.find(el=> el.id === id)
         setProduct(producto)
-        console.log(producto)
+        console.log(product)
     }, [product])
+
     
-    console.log(product)
+
+
+       
+
 
 return (
 <>
-    {product && <div className="container__details" >
+    {product && 
+    <div className="container__details" >
             <div key={id} className="product__details">
 
             <div className="imgDetail__container">
             <div className="productDetail-tag">{product.categoria}</div>
-            <div className="productDetail-stock">Stock:{product.stock} </div>
+            <div className="productDetail-stock">{product.stock} </div>
             <img src={product.img} alt="img-detail" className="imgDetail" />
             </div>
             
@@ -39,6 +44,7 @@ return (
             <div className="productDetail-sku">SKU:{product.sku} </div>
             <div className="cta__container">
             <ItemCount />
+            
             </div>
             
             </div>

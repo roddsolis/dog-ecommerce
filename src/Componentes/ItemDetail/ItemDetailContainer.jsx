@@ -1,4 +1,5 @@
 import React, { useEffect } from 'react'
+import Loading from '../Loading/Loading'
 import ItemDetail from "./ItemDetail"
 import './itemDetail.css'
 
@@ -413,6 +414,7 @@ const ItemDetailcontainer = () => {
 
     const [detail, setDetail] = React.useState([])
 
+    
 
     React.useEffect(() => {
 
@@ -444,15 +446,15 @@ const ItemDetailcontainer = () => {
 
 
 
-    }, [])
+    }, [detail])
 
     
 
     return ( 
         
-        
-       <ItemDetail detail={detail}/>
-       
+        <>
+            {detail.length > 0 ? <ItemDetail detail={detail}/> : <Loading/>} 
+        </> 
         
     )
 }

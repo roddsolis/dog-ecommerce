@@ -24,6 +24,7 @@ return(
             <Route path="/correas-de-cadena/:categoria" element={<ItemListContainer/>}/>
             <Route path="/articulos-de-aseo/:categoria" element={<ItemListContainer/>}/>
             <Route exact path="/detalles/:id" element={<ItemDetailcontainer/>}/>
+            <Route exact path="/comprar/" element={<ItemDetailcontainer/>}/>
         </Routes>
     
     <Footer />

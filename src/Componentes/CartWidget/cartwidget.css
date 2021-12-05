@@ -1,8 +1,13 @@
+
+.cartContainer{
+    border: 1px solid hsla(78, 90%, 61%, 0.4);
+    border-radius: 100px;
+}
+
 .widget-container{
     height: auto;
     color: hsla(78, 90%, 61%, 1);
-    border-radius: 10px;
-    border: 1px solid hsla(78, 90%, 61%, 0.4); 
+    border-radius: 100px;
     font-family: 'Manrope', sans-serif;
     font-weight: 800;
     font-size: 11px;
@@ -14,6 +19,16 @@
     text-transform: uppercase;
     letter-spacing: 0em;
     padding-left: 16px;
+    text-decoration: none;
+    transition: 0.2s ease-in-out;
+    background-color:  hsl(30, 6%, 19%);
+    
+}
+.widget-container:hover{
+    background-color: hsla(78, 90%, 61%, 1);
+    color: hsl(30, 6%, 19%);
+    
+   
 }
 
 
@@ -25,7 +40,7 @@
     height: 48px;
     padding:16px;
     margin: 0px 0px 0px 16px;
-    border-radius: 0px 8px 8px 0px;
+    border-radius: 0px 100px 100px 0px;
     font-size: 16px;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -33,6 +48,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    
     
     
 }
@@ -44,5 +60,9 @@
     font-size: 11px;
     shape-rendering:geometricPrecision;
     text-rendering: optimizeLegibility;
-
+    
+    
 }
+
+
+
