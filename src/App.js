@@ -4,7 +4,7 @@ import ItemListContainer from './Componentes/Item/ItemListContainer'
 import Footer from './Componentes/Footer'
 import './Componentes/styles/style.css'
 import ItemDetailcontainer from './Componentes/ItemDetail/ItemDetailContainer'
-import Home from "./Home/Home"
+import Home from "./Componentes/Home/Home"
 
 
 
@@ -18,7 +18,7 @@ return(
     <NavBar />
     
         <Routes>
-            <Route exact path="/" element={<Home/>}/>
+            <Route exact path="/home" element={<Home/>}/>
             <Route path="/collares/:categoria" element={<ItemListContainer />}/>
             <Route path="/juguetes/:categoria" element={<ItemListContainer/>}/>
             <Route path="/correas-de-cadena/:categoria" element={<ItemListContainer/>}/>

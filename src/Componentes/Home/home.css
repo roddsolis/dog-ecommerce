@@ -1,0 +1,32 @@
+.homeContainer{
+    background-color:white;
+    height: max-content;
+    width: 100%;
+   display: grid;
+   grid-template-columns: repeat(2, 1fr);
+   grid-template-rows: 1fr;
+   
+  
+}
+
+.saludoHome{
+    display: flex;
+   align-items: center;
+   justify-content: center;
+   flex-direction: column;
+}
+
+.img-home{
+    width:800px;
+    
+}
+
+h1{
+    margin: 40px 0px;
+    font-family: 'Manrope', sans-serif;
+    shape-rendering: geometricPrecision;
+    text-rendering: optimizeLegibility;
+    font-size: 32px;
+    letter-spacing: -0.02em;
+    color: hsl(30, 6%, 19%);
+}

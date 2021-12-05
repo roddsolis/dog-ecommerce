@@ -1,5 +1,4 @@
 import React, { useEffect } from 'react'
-import { useParams } from 'react-router'
 import ItemDetail from "./ItemDetail"
 import './itemDetail.css'
 
@@ -410,15 +409,12 @@ const productList = [
 
 
 
-const ItemDetailcontainer = ( ) => {
+const ItemDetailcontainer = () => {
 
-    
-    const [producto, setProducto] = React.useState({})
-    const {id} = useParams ()
-    
-    console.log(id)
+    const [detail, setDetail] = React.useState([])
 
-    useEffect(() => {
+
+    React.useEffect(() => {
 
 
         const productDetail = new Promise((resolve, reject) => {
@@ -427,7 +423,8 @@ const ItemDetailcontainer = ( ) => {
             setTimeout(() => {
 
                 resolve(productList)
-                
+               
+
             }, 2000);
 
         })
@@ -435,8 +432,8 @@ const ItemDetailcontainer = ( ) => {
 
 
         productDetail.then((resolve) => {
-            setProducto(resolve)
-            
+            setDetail(resolve)
+            console.log(resolve)
             
         })
         productDetail.catch((reject) => {
@@ -444,21 +441,17 @@ const ItemDetailcontainer = ( ) => {
         })
 
 
-        
-        
-        
-        
-        
-    }, [id])
+
+
+
+    }, [])
 
     
-    
+
     return ( 
         
         
-        <div>
-            <ItemDetail />
-        </div>
+       <ItemDetail detail={detail}/>
        
         
     )

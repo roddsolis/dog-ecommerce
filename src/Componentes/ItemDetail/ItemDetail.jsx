@@ -1,44 +1,44 @@
-//import Item from "../Item"
-import { useParams } from "react-router"
-// import Button from "../Button"
+import React,{useState,useEffect} from "react"
+import { useParams} from "react-router"
 import ItemCount from "../Counter/ItemCount"
 import './itemDetail.css'
 
 
 
-function ItemDetail(  ) {
+function ItemDetail({detail}) {
 
+    const [product, setProduct]=useState([])
+    const {id} = useParams();
 
-
-const {id} = useParams();
-       
-
+    useEffect(() => {
+        const producto= detail.find(el=> el.id === id)
+        setProduct(producto)
+        console.log(producto)
+    }, [product])
+    
+    console.log(product)
 
 return (
 <>
+    {product && <div className="container__details" >
+            <div key={id} className="product__details">
 
-    <div className="container__details" >
-
-        
-            
-            <div className="product__details">
-
-            <div className="imgDetail__container" >
-            <div className="productDetail-tag" >categoria</div>
-            <div className="productDetail-stock">Stock </div>
-            <img src="/" alt="img-detail" className="imgDetail"/>
+            <div className="imgDetail__container">
+            <div className="productDetail-tag">{product.categoria}</div>
+            <div className="productDetail-stock">Stock:{product.stock} </div>
+            <img src={product.img} alt="img-detail" className="imgDetail" />
             </div>
             
             <div className="main__info">
 
-            <h6>nombre</h6>
+            <h6>{product.nombre} </h6>
             <p>
-                descripcion
+                {product.descripcion}
             </p>
 
-            <div className="productDetail-sku">SKU:</div>
+            <div className="productDetail-sku">SKU:{product.sku} </div>
             <div className="cta__container">
-            <ItemCount/>
+            <ItemCount />
             </div>
             
             </div>
@@ -72,7 +72,7 @@ return (
 
         
 
-    </div>
+    </div>}
 </>
 )
 
