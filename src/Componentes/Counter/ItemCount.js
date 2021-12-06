@@ -1,12 +1,15 @@
 
 import { useState } from 'react'
 import './counter.css'
-import Button from '../Button'
-import { createContext } from 'react'
+import '../styles/button.css'
+import { useContext } from 'react'
+import { contexto } from '../CartContext'
 
-function ItemCount( {onClick}) {
+
+function ItemCount( {onAdd}) {
 
 
+   const { cart } = useContext(contexto)
 
     const [contador,setContador] = useState(0)
 
@@ -20,6 +23,12 @@ function ItemCount( {onClick}) {
        setContador(contador - 1)
     }
 
+    
+    const confirmar = () => {
+      onAdd(contador)
+      console.log("Me diste un click")
+   }
+
 
     return (
         
@@ -29,7 +38,7 @@ function ItemCount( {onClick}) {
             <div className="contador">{contador}</div>
             <button onClick={sumarContador} className="boton-sumar">+</button>
             </div>
-            <Button onClick={ () => onClick(contador) } btntext="Agregar al carro" buttonType="button-primary"/>
+            <button onClick={confirmar} btntext="Agregar al carro" className="button-primary">Agregar al carro</button>
             </div>
         
     ) 

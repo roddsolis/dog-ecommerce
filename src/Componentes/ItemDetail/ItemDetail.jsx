@@ -1,25 +1,34 @@
 import React,{useState,useEffect} from "react"
+import { useContext } from 'react'
+import { contexto } from '../CartContext'
 import { useParams} from "react-router"
-import Button from "../Button"
 import ItemCount from "../Counter/ItemCount"
 import './itemDetail.css'
 
 
 
-function ItemDetail({detail}) {
-    const [product, setProduct]=useState([])
-    const {id} = useParams();
 
-    useEffect(() => {
-        let producto= detail.find(el=> el.id === id)
-        setProduct(producto)
-        console.log(product)
-    }, [product])
+
+function ItemDetail({detail}) {
+
+
+    const {addToCart} = useContext(contexto)
 
     
+    const [product, setProduct]= useState([])
+    const {id} = useParams();
+    
+    const onAdd = (cantidad)=>{
 
-
-       
+        console.log("este es el dato del item detail")
+        addToCart(product,cantidad)
+        console.log(product, cantidad)
+    }
+    useEffect(() => {
+        const producto= detail.find(el=> el.id === id)
+        setProduct(producto)
+        console.log(producto)
+    }, [product])
 
 
 return (
@@ -30,7 +39,7 @@ return (
 
             <div className="imgDetail__container">
             <div className="productDetail-tag">{product.categoria}</div>
-            <div className="productDetail-stock">{product.stock} </div>
+            <div className="productDetail-stock">STOCK:{product.stock} </div>
             <img src={product.img} alt="img-detail" className="imgDetail" />
             </div>
             
@@ -43,7 +52,7 @@ return (
 
             <div className="productDetail-sku">SKU:{product.sku} </div>
             <div className="cta__container">
-            <ItemCount />
+            <ItemCount onAdd={onAdd}/>
             
             </div>
             

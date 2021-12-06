@@ -9,6 +9,7 @@ import { contexto } from './CartContext'
 const NavBar = () => {
 
     const resultadoContexto = useContext(contexto)
+    
 
     console.log(resultadoContexto)
 

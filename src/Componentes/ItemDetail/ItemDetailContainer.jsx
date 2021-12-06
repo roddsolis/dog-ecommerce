@@ -427,7 +427,7 @@ const ItemDetailcontainer = () => {
                 resolve(productList)
                
 
-            }, 2000);
+            }, 1000);
 
         })
 

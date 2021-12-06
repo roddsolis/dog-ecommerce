@@ -5,7 +5,7 @@ import Footer from './Componentes/Footer'
 import './Componentes/styles/style.css'
 import ItemDetailcontainer from './Componentes/ItemDetail/ItemDetailContainer'
 import Home from "./Componentes/Home/Home"
-
+import CustomComponent from './Componentes/CartContext'
 
 
 
@@ -14,11 +14,14 @@ const App = () => {
 
 return(
 
-<>
-    <NavBar />
+<>  
+<CustomComponent >
     
+    <NavBar />
         <Routes>
-            <Route exact path="/home" element={<Home/>}/>
+            
+            
+            <Route exact path="/" element={<Home/>}/>
             <Route path="/collares/:categoria" element={<ItemListContainer />}/>
             <Route path="/juguetes/:categoria" element={<ItemListContainer/>}/>
             <Route path="/correas-de-cadena/:categoria" element={<ItemListContainer/>}/>
@@ -28,6 +31,7 @@ return(
         </Routes>
     
     <Footer />
+    </CustomComponent>
 </>
 )
 

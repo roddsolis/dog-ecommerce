@@ -1,8 +1,6 @@
-// import Button from '../Button'
 import ItemCount from '../Counter/ItemCount'
 import '../Item/items.css'
 import '../styles/button.css'
-//import ItemDetailContainer from './ItemDetail/ItemDetailContainer'
 import { Link } from 'react-router-dom'
 
 
@@ -10,8 +8,11 @@ import { Link } from 'react-router-dom'
 
 const Item = ( { producto } ) => {
 
-    
-    console.log(producto.id)
+    const onAdd = (cantidad)=>{
+
+        console.log("seleccionaron la cantidad")
+        console.log(cantidad, producto)
+    }
    
     return (
 
@@ -37,7 +38,7 @@ const Item = ( { producto } ) => {
 
                         <h3>{producto.nombre}</h3>
                         <div className="product-price"><small>$</small>{producto.precio}</div>
-                        <ItemCount/>
+                        <ItemCount onAdd={onAdd}/>
                         <Link to={`/detalles/${producto.id}`} className="btnLinkSecondary">Ver detalles</Link>
                 </div>
              
